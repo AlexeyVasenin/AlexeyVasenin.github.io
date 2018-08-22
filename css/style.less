@@ -1,0 +1,234 @@
+/*Basic*/
+html {
+  font-size: 15px;
+}
+
+body {
+
+}
+
+/*button*/
+.btn {
+  .reg;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  color:@ct-white;
+  background: @bg-red;
+  box-shadow: 0 0 0 5px @bg-lred;
+
+}
+
+/*fonts*/
+@font-face {
+  font-family: 'Rokkitt-l';
+  src: url('../fonts/Rokkitt-Light.eot');
+  src: url('../fonts/Rokkitt-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Rokkitt-Light.woff2') format('woff2'),
+  url('../fonts/Rokkitt-Light.woff') format('woff'),
+  url('../fonts/Rokkitt-Light.ttf') format('truetype'),
+  url('../fonts/Rokkitt-Light.svg#Rokkitt-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rokkitt-b';
+  src: url('../fonts/Rokkitt-Bold.eot');
+  src: url('../fonts/Rokkitt-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Rokkitt-Bold.woff2') format('woff2'),
+  url('../fonts/Rokkitt-Bold.woff') format('woff'),
+  url('../fonts/Rokkitt-Bold.ttf') format('truetype'),
+  url('../fonts/Rokkitt-Bold.svg#Rokkitt-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rokkitt-r';
+  src: url('../fonts/Rokkitt-Regular.eot');
+  src: url('../fonts/Rokkitt-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Rokkitt-Regular.woff2') format('woff2'),
+  url('../fonts/Rokkitt-Regular.woff') format('woff'),
+  url('../fonts/Rokkitt-Regular.ttf') format('truetype'),
+  url('../fonts/Rokkitt-Regular.svg#Rokkitt-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.light {
+  font-family: "Rokkitt-l";
+}
+
+.bold {
+  font-family: "Rokkitt-b";
+}
+
+.reg {
+  font-family: "Rokkitt-r";
+}
+
+/* color-text*/
+@ct-white:#fff;
+@ct-red:#c23e30;
+
+/* background-color*/
+@bg-lgrey:#f6f6f6;
+@bg-lwhite:rgba(255, 255, 255, 0.5);;
+@bg-red:#e74c3c;
+@bg-actred:#DD695F;
+@bg-lred:rgba(231, 76, 60, 0.5);
+
+
+
+.header {
+  /*min-height: 500px;*/
+  text-shadow: 0 0 0 2px white;
+  background: url('../img/daniel_chodusov.png')no-repeat center top;
+  
+  .navigation {
+    padding: 0 0;
+  }
+
+  img {
+    width: 70px;
+  }
+
+  .navbar {
+    .collapse {
+      .navbar-nav{
+        .nav-item {
+          font-weight: bold;
+          
+        }
+
+        .active {
+          text-decoration:underline;
+        }
+      }
+    }
+  }
+}
+
+.blur:before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px; left: 0px;
+  width: 100%;
+  min-height: 100%;
+  background: rgba(255,255,255,0.3);
+}
+
+.header-banner {
+  .reg;
+  color: #fff;
+
+  .btn {
+    position: relative;
+    top: 20px;
+    margin-top: 20px;
+  }
+}
+
+.work {
+  margin-top: 50px;
+
+  .work-title{
+    font-family: Myriad Pro;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: @ct-red;
+  }
+
+  &-about {
+    width: 100%;
+    margin-top: 40px;
+
+    img {
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    .work-title {
+      font-size: 1.3rem;
+      text-transform: unset;
+    }
+  }
+}
+
+.photo {
+  margin-top: 50px;
+
+  .photo-slider {
+    width: 100%;
+    margin: 0 auto;
+
+    .slider-item {
+
+      img {
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.view-more {
+  margin-top: 50px;
+  text-align: center;
+  
+}
+
+.user-forms {
+  margin-top: 50px;
+  
+  .forms-title {
+    margin-bottom: 50px;
+    .bold;
+    color: @ct-red;
+  }
+}
+
+.footer {
+  margin-top: 50px;
+  background: @bg-red;
+
+  .social {
+    position:relative;
+    top:-30px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto; 
+    border: 4px solid @bg-lred;
+  }
+
+  .social--tw {
+    background: url("../img/twitter.svg") no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .social--drb {
+    background: url("../img/dribbble.svg") no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .social--f {
+    background: url("../img/facebook.svg") no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .social--tw, .social--drb, .social--f {
+    background-color: @bg-lgrey;
+  }
+
+  .about-me {
+    text-align: center;   
+    a{
+      .reg;
+      font-size: 1.2rem;
+      color: @ct-white;
+    }
+  }
+}
